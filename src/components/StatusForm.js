@@ -28,20 +28,13 @@ const StatusForm = () => {
 
 
 
-
-
-
-
-
-
-
   return (
-    <form onSubmit ={handleSubmit}>
+      <form className='regForm' onSubmit ={handleSubmit}>
         <div className = "mb-3">
             <label className ="form-label"> Ange status</label>
             <input type = "text" className ="form-control" value = {status} onChange={handleChange}></input>
-        </div>
         <button type ="submit" className ="btn btn-success">Spara</button>
+        </div>
     </form>
   )
 }

@@ -27,7 +27,8 @@ const CustomerForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+
+        <form className='regForm' onSubmit={handleSubmit}>
             <div className="mb-3">
                 <label className="form-label">Ange Förnamn</label>
                 <input type="text" className="form-control" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
@@ -43,8 +44,8 @@ const CustomerForm = () => {
             <div className="mb-3">
                 <label className="form-label">Ange Telefonnummer</label>
                 <input type="text" className="form-control" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
-            </div>
             <button type="submit" className="btn btn-success">Spara</button>
+            </div>
         </form>
     )
 }

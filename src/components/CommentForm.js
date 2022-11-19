@@ -4,7 +4,7 @@ const CommentForm = () => {
 
     // const {issueId, customerId} = useParams()
 
-    
+
 
     const [issueId, setIssueId] = useState(2)
     const [customerId, setCustomerId] = useState(1)
@@ -30,12 +30,12 @@ const CommentForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className='regForm' onSubmit={handleSubmit}>
             <div className="mb-3">
                 <label className="form-label">Ange Kommentar</label>
                 <textarea type="text" className="form-control" value={comment} onChange={(e) => setComment(e.target.value)} ></textarea>
-            </div>
             <button type="submit" className="btn btn-success">Spara</button>
+            </div>
         </form>
     )
 }

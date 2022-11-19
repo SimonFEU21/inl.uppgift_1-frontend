@@ -34,7 +34,8 @@ const IssueForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        
+        <form className='regForm' onSubmit={handleSubmit}>
             <div className="mb-3">
                 <label className="form-label">Ange Kund</label>
                 <select className="form-select" onChange={(e) => setCustomerId(e.target.value)}>
@@ -49,8 +50,8 @@ const IssueForm = () => {
             <div className="mb-3">
                 <label className="form-label">Ange Beskrivning</label>
                 <textarea type="text" className="form-control" value={description} onChange={(e) => setDescription(e.target.value)} ></textarea>
-            </div>
             <button type="submit" className="btn btn-success">Spara</button>
+            </div>
         </form>
     )
 }

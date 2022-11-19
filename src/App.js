@@ -7,10 +7,10 @@ import StatusForm from './components/StatusForm';
 function App() {
   return (
     <>
-    <div className ='container mt-5'>
-      {/* <StatusForm /> */}
-      {/* <CustomerForm />  */}
-      {/* <IssueForm /> */}
+    <div className ='container'>
+      <StatusForm />
+      <CustomerForm /> 
+      <IssueForm />
       <CommentForm />
     </div>
     </>

@@ -1,5 +1,63 @@
+:root {
+    --clr-primary: #c7c7c7;
+    --clr-error: #db1010;
+    --clr-sucess: #14ac06;
+    --border-radius: 1rem;
+  }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.html, body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(#f15252, #243b55);
+}
+
+
+.mb-3 {
+    padding: .7rem;
+    width: 50%;
+}
+
+.form-control {
+  padding: .3rem;
+  margin-top: .2rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--clr-primary);
+}
+
+.btn {
+    padding: .5em;
+    margin-top: 1.3rem;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    width: 60%;
+    color: rgb(255, 255, 255);
+    transition: background 100ms;
+    background: linear-gradient(#d54040, #7b99bb);
+}
+
+.regForm {
+    background-color: #fafafa;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    background-color: #f0eeee;
 }
